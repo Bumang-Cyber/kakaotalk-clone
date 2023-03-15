@@ -1,0 +1,294 @@
+#chat-screen {
+    background-color: #96B4D1;
+    height: 5000vh;
+}
+
+.chat-timestamp {
+    background-color: #7899b8;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 4px 16px;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.main-chat {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(10px);
+    animation: fadeIn 0.3s linear forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+    
+}
+
+.chat-opponent {
+    display: flex;
+    margin-top: 24px;
+}
+
+.chat-opponent__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    margin-right: 8px;
+    transform-origin: left top;
+}
+
+.chat-opponent__name {
+    display: flex;
+    color: #666666;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.chat-opponent__row {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+/*말풍선 갸우뚱 하는 또르르.. 하는 애니메이션 만들기*/
+
+.chat-opponent__talk {
+    font-size: 18px;
+    display: flex;
+    padding: 8px 16px;
+    background-color: white;
+    border-radius: 16px;
+    border-top-left-radius: 4px;
+    flex-wrap: wrap;
+    transition: all 0.2s ease-out;
+}
+
+.chat-opponent__talk:hover {
+    transform: scale(1.02);
+    border: 3px solid #f0cb53;
+}
+
+.chat-opponent__time {
+    font-size: 12px;
+    color: #666666;
+    margin-left: 4px;
+    line-height: normal;
+}
+
+
+/* 내 메시지*/
+
+.chat-mine {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.chat-mine__row {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.chat-mine__talk {
+    font-size: 18px;
+    display: flex;
+    padding: 8px 16px;
+    background-color: var(--yellow);
+    border-radius: 16px;
+    border-top-right-radius: 4px;
+    flex-wrap: wrap;
+    transition: all 0.2s ease-out;
+}
+
+.chat-mine__talk:hover {
+    transform: scale(1.02);
+    border: 3px solid #cbab3e;
+}
+
+.chat-mine__time {
+    font-size: 12px;
+    color: #666666;
+    margin-right: 4px;
+    line-height: normal;
+}
+
+
+
+
+
+/* 메시지 입력창*/
+.chat-input {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 24px;
+    position: fixed;
+    bottom: 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+.chat-input__add {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #666666;
+    color: #666666;
+    border-radius: 30%;
+    margin-right: 24px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.chat-input__control {
+    display: flex;
+    width: calc(100vw - 24*4px);
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #f5f5f5;
+    border: 1px solid #e5e9e9;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.chat-input__text {
+    font-size: 18px;
+    margin-left: 16px;
+    background-color: #f5f5f5;
+    border: none;
+    width: 100%;
+}
+
+.chat-input__control > div {
+    display: flex;
+    align-items: center;
+}
+
+
+.chat-input__emoji {
+    color: #666666;
+    animation: giggle 0.3s ease-in-out infinite;
+}
+
+@keyframes giggle {
+    0% {
+        transform: scale(0.9, 1.1);
+    }
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+    100% {
+        transform: scale(0.9, 1.1);
+    }
+}
+
+.chat-input__send {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(198, 207, 123, 0.69);
+    background-color: var(--yellow);
+    border-radius: 50%;
+    margin-right: 2px;
+    margin-left: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-input__send:hover,
+.chat-input__send:active {
+    background-color: #f0cb53;
+}
+
+.chat-input:focus-within .chat-input__add {
+    opacity: 0;
+}
+
+.chat-input:focus-within .chat-input__control {
+    border: 1px solid #cecece;
+    width: 100vw;
+    transform: translateX(-48px);
+}
+
+/*니코쌤하고 만든 거*/
+.reply {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+    box-sizing: border-box;
+}
+
+.reply .reply__column:first-child{
+    width: 10%;
+}
+
+.reply .reply__column:first-child i {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #666666;
+    color: #666666;
+    border-radius: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.reply .reply__column:last-child{
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+    position: absolute;
+    right: 4px;
+}
+
+.reply__column:last-child > i {
+    right: 56px;
+    color: #666666;
+}
+
+.reply input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #e5e9e9;;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    font-size: 18px;
+    padding-left: 16px;
+}
+
+.reply button {
+    background-color: var(--yellow);
+    border: 1px solid rgba(198, 207, 123, 0.69);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.reply button:focus,
+.reply button:active {
+    background-color: #d4ad2f;
+}

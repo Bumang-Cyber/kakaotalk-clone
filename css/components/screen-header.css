@@ -1,0 +1,84 @@
+/* 스크린 헤더 기본형 */
+.screen-header {
+    display: flex;
+    padding: 16px var(--horizontal-space);
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 40px;
+    z-index: 1;
+}
+
+.screen-header__title {
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.screen-header__icon-list {
+    display: flex;
+    color: #888888;
+}
+
+.screen-header__icons {
+    margin: 0px 16px;
+}
+
+.screen-header__icons:last-child {
+    margin-right: 0;
+}
+
+
+
+/* 스크린 헤더 응용형 */
+.screen-header-depth {
+    display: flex;
+    padding: 16px var(--horizontal-space);
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 40px;
+    z-index: 1;
+}
+
+.screen-header-depth__column {
+    display: flex;
+    width: 33.3%;
+}
+
+.screen-header-depth__column:first-child {
+    justify-content: left;
+}
+
+.screen-header-depth__column:nth-child(2) {
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.screen-header-depth__column:last-child {
+    justify-content: right;
+}
+
+.screen-header-depth__column:last-child i {
+    margin-left: 24px;
+}
+
+.__chat {
+    background-color: #96B4D1;
+}
+
+.screen-header__icons .fa-gear:hover {
+    animation: rotateGear 1s linear infinite;
+}
+
+@keyframes rotateGear {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}

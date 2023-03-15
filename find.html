@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - Kokoa Talk</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar_column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi fa-sm"></i>
+        </div>
+        <div class="status-bar_column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar_column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full fa-2x"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icon-list">
+            <span class="screen-header__icons">
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </span>
+            <span class="screen-header__icons position-rel">
+                <i class="fa-solid fa-gear fa-xl"></i>
+                <span class="badge__position-dot"></span>
+            </span>
+        </div>
+    </header>
+
+    <main class="main-screen" id="find-screen">
+        <!--아이콘셋-->
+        <div class="find-iconset">
+            <div class="find-iconset__icon">
+                <i class="fa-solid fa-qrcode fa-2x"></i>
+                <span>QR Code</span>
+            </div>
+            <div class="find-iconset__icon">
+                <i class="fa-regular fa-address-book fa-2x"></i>
+                <span>Add by<br>Contacts</span>
+            </div>
+            <div class="find-iconset__icon">
+                <i class="fa-regular fa-address-card fa-2x"></i>
+                <span>Add by ID</span>
+            </div>
+            <div class="find-iconset__icon">
+                <i class="fa-regular fa-envelope fa-2x"></i>
+                <span>Invite</span>
+            </div>
+        </div>
+        <!--섹션 바 - Recommended Friends -->
+        <div class="section__channel">
+            <div class="section__channel-header">
+                <span>Recommended Friends</span>
+                <!--<i class="fa-solid fa-angle-up fa-sm"></i>-->             
+            </div>
+        </div>
+        <!--섹션 본문 영역-->
+        <div class="recommended-friend">
+            <div>You have no recommended friends.</div>
+        </div>
+        <!--섹션 바 - openchat-->
+        <div class="section__channel">
+            <div class="section__channel-header">
+                <span>Open Chat</span>
+                <div>
+                    <span>Go to Openchat Home</span>
+                    <i class="fa-solid fa-angle-right fa-xl"></i>
+                </div>
+                <!--<i class="fa-solid fa-angle-up fa-sm"></i>-->             
+            </div>
+        </div>
+        <!--오픈채팅방 카드-->
+        <div>
+            <div class="openchat-card">
+                <div class="openchat-card__info">
+                    <span class="openchat-card__title">Happy_Spiral</span>
+                    <span class="openchat-card__tag">#gourmet#restaurant#drink</span>
+                    <div>
+                        <img src="./img/kikuri_hiroi.jpeg" alt="">
+                        <div>
+                            <span>802 members</span>
+                            <span></span>
+                            <span>Active</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="openchat-card__img position-rel">
+                    <img src="./img/dummy1.jpeg" alt="">
+                    <div class="openchat-card__likes">
+                        <i class="fa-solid fa-heart fa-sm"></i>
+                        <span>326</span>
+                    </div>
+                </div>
+            </div>
+            <div class="divider_horizontal"></div>
+            <!--오픈채팅방 카드-->
+            <div class="openchat-card">
+                <div class="openchat-card__info">
+                    <span class="openchat-card__title">#Kessoku Band</span>
+                    <span class="openchat-card__tag">#Rock_band#Tokyo#seisyunComplex</span>
+                    <div>
+                        <img src="./img/ikuyo-kita2.jpeg" alt="">
+                        <div>
+                            <span>5 members</span>
+                            <span></span>
+                            <span>Active</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="openchat-card__img position-rel">
+                    <img src="./img/ikuyo-kita3.jpeg" alt="">
+                    <div class="openchat-card__likes">
+                        <i class="fa-solid fa-heart fa-sm"></i>
+                        <span>326</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--네비게이션 바-->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link position-rel" href="friends.html">
+                <!-- friends -->
+                <i class="fa-regular fa-user fa-xl"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link position-rel" href="chats.html">
+                <!-- message -->
+                <span class="badge badge__position-text">1</span>
+                <i class="fa-regular fa-message fa-xl"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link-sel position-rel" href="find.html">
+                <!-- find -->
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link position-rel" href="more.html">
+                <!-- more -->
+                <span class="badge__position-dot position-up"></span>
+                <i class="fa-solid fa-ellipsis fa-xl"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div id="no-mobile">
+        <span>This page is only for Mobile</span>
+    </div>
+    <script src="https://kit.fontawesome.com/50769c5fd2.js" crossorigin="anonymous"></script>
+</body>
+</html>

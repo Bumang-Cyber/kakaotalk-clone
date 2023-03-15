@@ -1,0 +1,7 @@
+:root {
+    /*컬러 정의 root*/
+    --yellow: #fae100;
+    --gray400: #888888;
+    /*마진 정의*/
+    --horizontal-space: 24px;
+}

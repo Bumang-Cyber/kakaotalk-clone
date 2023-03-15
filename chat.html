@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kita Ikuyo - Kokoa Talk</title>
+</head>
+<body id="chat-screen">
+    <div class="status-bar __chat">
+        <div class="status-bar_column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi fa-sm"></i>
+        </div>
+        <div class="status-bar_column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar_column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full fa-2x"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header-depth __chat">
+        <div class="screen-header-depth__column">
+            <a href="chats.html">
+                <i class="fa-solid fa-chevron-left fa-xl"></i>
+            </a>
+        </div>
+        <div class="screen-header-depth__column">
+            <h1>Kita Ikuyo</h1>
+        </div>
+        <div class="screen-header-depth__column">
+            <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
+            <span><i class="fa-solid fa-bars fa-xl"></i></span>
+        </div>
+    </header>
+
+    <!--세팅 스크린-->
+    <main class="main-screen main-chat">
+    
+        <div class="chat-timestamp">
+            <span>Tuesday, June 30, 2020</span>
+        </div>
+
+        <div class="chat-opponent">
+            <img class="chat-opponent__avatar" src="./img/ikuyo-kita2.jpeg" alt="">
+            <div>
+                <span class="chat-opponent__name">
+                    Kita Ikuyo
+                </span>
+                <div class="chat-opponent__row">
+                    <span class="chat-opponent__talk">
+                        Stay with full of joy on yourself, Bumang
+                    </span>
+                    <span class="chat-opponent__time">21:22</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-mine">
+            <div>
+                <div class="chat-mine__row">
+                    <span class="chat-mine__time">21:23</span>
+                    <span class="chat-mine__talk">
+                        Kita-san makes the world happy
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!--1. 입력창을 input으로 바꿔보기,
+            2. 보내기 버튼을 button으로 만들어보기
+            3. 보내기할 때 active, focus 건드려보기
+            ~done~ -->
+    </main>
+    <form class="chat-input">
+        <div class="chat-input__add">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="chat-input__control">
+            <input class="chat-input__text" placeholder="Write a Message">
+            <div>
+                <div class="chat-input__emoji">
+                    <i class="fa-regular fa-face-laugh-beam fa-xl"></i>
+                </div>
+                <button class="chat-input__send">
+                    <i class="fa-solid fa-arrow-up-long fa-lg"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+<!--
+    <form class="reply">
+        <div class="reply__column">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" placeholder="Write a Message...">
+            <i class="fa-regular fa-face-laugh-beam fa-xl"></i>
+            <button>
+                <i class="fa-solid fa-arrow-up-long fa-lg"></i>
+            </button>
+        </div>
+    </form>
+-->
+    <div id="no-mobile">
+        <span>This page is only for Mobile</span>
+    </div>
+    <script src="https://kit.fontawesome.com/50769c5fd2.js" crossorigin="anonymous"></script>
+</body>
+</html>

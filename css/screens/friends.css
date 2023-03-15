@@ -1,0 +1,41 @@
+#friend-display_text-banner {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+    padding: 4px;
+}
+
+#friend-display_text-banner > * {
+    margin: 8px;
+}
+
+#friend-display_text-banner i {
+    color: #cbcbcb;
+}
+
+#splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    font-size: 100px;
+    animation: hideSplashScreen 0.1s ease-in-out forwards;
+    animation-delay: 2s;
+    z-index: 2;
+}
+
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

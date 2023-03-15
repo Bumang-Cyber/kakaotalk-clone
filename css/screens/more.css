@@ -1,0 +1,52 @@
+.more-iconset {
+    display: flex;
+    padding: 24px 0px;
+    text-align: center;
+    color: #9e9e9e;
+    flex-wrap: wrap;
+}
+
+.more-iconset__icon {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.more-iconset__icon > span {
+    display: flex;
+    height: 48px;
+    align-items: center;
+}
+
+.more-iconset__icon > span {
+    color: #555555;
+    font-size: 14px;
+}
+
+
+
+/*patnets*/
+.patner_list {
+    display: flex;
+}
+
+.patner_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    font-size: 14px;
+    color: #777777;
+}
+
+.patner_icon img {
+    width: 48px;
+    height: 48px;
+    margin-top: 16px;
+    border-radius: 8px;
+    object-fit: cover;
+}

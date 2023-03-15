@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats - Kokoa Talk</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar_column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi fa-sm"></i>
+        </div>
+        <div class="status-bar_column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar_column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full fa-2x"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Chats</h1>
+        <div class="screen-header__icon-list">
+            <span class="screen-header__icons">
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </span>
+            <span class="screen-header__icons">
+                <i class="fa-regular fa-comments fa-xl"></i>
+            </span>
+            <span class="screen-header__icons">
+                <i class="fa-solid fa-music fa-xl"></i>
+            </span>
+            <span class="screen-header__icons">
+                <i class="fa-solid fa-gear fa-xl"></i>
+            </span>
+        </div>
+    </header>
+
+    <!--친구 화면-->
+    <main class="main-screen">
+        <!--유저 컴포넌트 big-->
+        <a href="chat.html">
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img class="user-component__avatar--nm" src="./img/ikuyo-kita2.jpeg" alt="">
+                    <div class="user-component__text">
+                        <span class="user-component__title">Kita Ikuyo</span>
+                        <h6 class="user-component__subtitle">Stay with full of joy on yourself, Bumang.</h6>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span class="user-component__time">21:22</span>
+                    <div class="badge badge--xl">1</div>
+                </div>
+            </div>
+        </a>
+    </main>
+
+
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link position-rel" href="friends.html">
+                <!-- friends -->
+                <i class="fa-regular fa-user fa-xl"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link-sel position-rel" href="chats.html">
+                <!-- message -->
+                <span class="badge badge__position-text">1</span>
+                <i class="fa-solid fa-message fa-xl"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link position-rel" href="find.html">
+                <!-- find -->
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link position-rel" href="more.html">
+                <!-- more -->
+                <span class="badge__position-dot"></span>
+                <i class="fa-solid fa-ellipsis fa-xl"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div id="no-mobile">
+        <span>This page is only for Mobile</span>
+    </div>
+    <script src="https://kit.fontawesome.com/50769c5fd2.js" crossorigin="anonymous"></script>
+</body>
+</html>
